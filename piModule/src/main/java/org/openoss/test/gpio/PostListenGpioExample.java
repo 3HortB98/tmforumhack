@@ -47,9 +47,9 @@ import com.pi4j.io.gpio.event.GpioPinListenerDigital;
  * This example code demonstrates how to setup a listener
  * for GPIO pin state changes on the Raspberry Pi.  
  * 
- * @author Robert Savage 
+ * @author Robert Savage
  */
-public class ListenGpioExample {
+public class PostListenGpioExample {
     
     public static void main(String args[]) throws InterruptedException {
         System.out.println("<--Pi4J--> GPIO Listen Example ... started.");

@@ -1,5 +1,4 @@
 /home/pi/devel/gitrepos/tmforumhack/piModule/target
 
-sudo java -cp  "./target/pimodule-0.0.1-SNAPSHOT.jar:/home/pi/.m2/repository/com/pi4j/pi4j-core/1.0/*"  org.openoss.test.gpio.ControlGpioExample
 
-
+sudo java -cp  "./target/pimodule-0.0.1-SNAPSHOT.jar:/home/pi/.m2/repository/com/pi4j/pi4j-core/1.0/*"  org.openoss.test.gpio.ControlGpioExample2

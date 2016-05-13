@@ -42,7 +42,7 @@ import com.pi4j.io.gpio.RaspiPin;
  * 
  * @author Robert Savage
  */
-public class ControlGpioExample2 {
+public class ControlGpioExample2b {
     
     public static void main(String[] args) throws InterruptedException {
         
@@ -52,8 +52,8 @@ public class ControlGpioExample2 {
         final GpioController gpio = GpioFactory.getInstance();
         
         // provision gpio pin #01 as an output pin and turn on
-        // GPIO_05 is pin 25
-        final GpioPinDigitalOutput pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_06, "MyLED", PinState.HIGH);
+        // GPIO_05 is pin 24
+        final GpioPinDigitalOutput pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_05, "MyLED", PinState.HIGH);
 
         // set shutdown state for this pin
         pin.setShutdownOptions(true, PinState.LOW);
