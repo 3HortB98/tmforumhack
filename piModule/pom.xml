@@ -27,14 +27,11 @@
 				<groupId>org.dstovall</groupId>
 				<artifactId>onejar-maven-plugin</artifactId>
 				<version>1.4.4</version>
-
 				<goals>
-
 					<goal>one-jar</goal>
 				</goals>
 				<configuration>
 					<mainClass>org.openoss.test.gpio.ListenGpioExample</mainClass>
-
 					<attachToBuild>true</attachToBuild>
 					<filename>${project.build.finalName}-onejar.${project.packaging}</filename>
 				</configuration>
