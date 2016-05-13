@@ -43,7 +43,7 @@ import com.pi4j.io.gpio.RaspiPin;
  * 
  * @author Robert Savage
  */
-public class ControlGpioExample3 {
+public class ControlGpioExample3Crash {
 
 	public static void main(String[] args) throws InterruptedException {
 
