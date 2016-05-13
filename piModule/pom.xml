@@ -5,7 +5,7 @@
 	<artifactId>pimodule</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pimodule</name>
-	<!-- <packaging>jar</packaging> -->
+	<packaging>jar</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,7 +18,6 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5.1</version>
 				<configuration>
-					<!-- put your configurations here -->
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
@@ -27,14 +26,18 @@
 				<groupId>org.dstovall</groupId>
 				<artifactId>onejar-maven-plugin</artifactId>
 				<version>1.4.4</version>
-				<goals>
-					<goal>one-jar</goal>
-				</goals>
-				<configuration>
-					<mainClass>org.openoss.test.gpio.ListenGpioExample</mainClass>
-					<attachToBuild>true</attachToBuild>
-					<filename>${project.build.finalName}-onejar.${project.packaging}</filename>
-				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>one-jar</goal>
+						</goals>
+						<configuration>
+							<mainClass>org.openoss.test.gpio.ListenGpioExample</mainClass>
+							<attachToBuild>true</attachToBuild>
+							<filename>${project.build.finalName}-onejar.${project.packaging}</filename>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
